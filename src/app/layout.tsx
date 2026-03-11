@@ -2,15 +2,22 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Groom Up — Services équestres premium",
+  title: "Groom Up — La plateforme des professionnels équestres",
   description:
-    "La première application qui connecte cavaliers et professionnels équins en France. Trouvez un groom, un coach, un transporteur près de chez vous.",
+    "Trouvez et contactez les meilleurs professionnels équins près de chez vous. Coaching, soins, transport, pension — tout est sur Groom Up.",
   openGraph: {
-    title: "Groom Up — Services équestres premium",
+    title: "Groom Up — La plateforme des professionnels équestres",
     description:
       "La première application qui connecte cavaliers et professionnels équins en France.",
     type: "website",
     locale: "fr_FR",
+    siteName: "Groom Up",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Groom Up — La plateforme des professionnels équestres",
+    description:
+      "La première application qui connecte cavaliers et professionnels équins en France.",
   },
 };
 
@@ -20,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -29,11 +36,14 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicon.png" />
       </head>
-      <body className="bg-stone-50 text-stone-900 antialiased">{children}</body>
+      <body className="bg-stone-950 text-stone-200 antialiased">
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,91 +1,90 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Search, SlidersHorizontal, Send } from "lucide-react";
 
 const steps = [
   {
     number: "01",
-    icon: Search,
     title: "Recherchez",
     description:
-      "Entrez votre localisation et le type de service dont vous avez besoin. L'app trouve les pros autour de vous.",
+      "Renseignez votre localisation et le service dont vous avez besoin. L'app identifie les professionnels disponibles autour de vous.",
     screenshot: "/screenshots/search.png",
   },
   {
     number: "02",
-    icon: SlidersHorizontal,
     title: "Comparez",
     description:
-      "Consultez les profils, spécialités, tarifs et avis. Trouvez le professionnel qui correspond à vos besoins.",
+      "Parcourez les profils détaillés : spécialités, tarifs, avis, temps de réponse. Trouvez celui qui correspond à vos attentes.",
     screenshot: "/screenshots/results.png",
   },
   {
     number: "03",
-    icon: Send,
     title: "Contactez",
     description:
-      "Envoyez un message directement au professionnel. Organisez votre rendez-vous en quelques échanges.",
+      "Envoyez un message directement. Échangez, planifiez et organisez votre rendez-vous en quelques minutes.",
     screenshot: "/screenshots/messages.png",
   },
 ];
 
 export default function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="bg-stone-50 py-20 md:py-28">
-      <div className="mx-auto max-w-6xl px-5">
+    <section id="how-it-works" className="relative bg-stone-950 py-24 md:py-32">
+      {/* Border top */}
+      <div className="absolute left-1/2 top-0 h-px w-3/4 max-w-2xl -translate-x-1/2 bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
+
+      <div className="mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
           className="text-center"
         >
-          <p className="text-sm font-semibold uppercase tracking-widest text-green-600">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-green-400/70">
             Comment ça marche
           </p>
-          <h2 className="mt-3 font-[family-name:var(--font-display)] text-3xl font-bold md:text-4xl">
-            3 étapes, c&apos;est tout.
+          <h2 className="mt-4 font-[family-name:var(--font-display)] text-3xl font-bold text-white md:text-4xl">
+            Simple. Rapide. Efficace.
           </h2>
         </motion.div>
 
-        <div className="mt-16 space-y-20 md:space-y-28">
+        <div className="mt-20 space-y-24 md:space-y-32">
           {steps.map((step, i) => (
             <motion.div
               key={step.number}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className={`flex flex-col items-center gap-10 md:flex-row md:gap-16 ${
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className={`flex flex-col items-center gap-12 md:flex-row md:gap-20 ${
                 i % 2 === 1 ? "md:flex-row-reverse" : ""
               }`}
             >
               {/* Text */}
               <div className="flex-1">
-                <span className="font-[family-name:var(--font-display)] text-5xl font-bold text-stone-200">
-                  {step.number}
-                </span>
-                <div className="mt-4 flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500/10">
-                    <step.icon className="h-5 w-5 text-green-600" />
-                  </div>
-                  <h3 className="font-[family-name:var(--font-display)] text-2xl font-bold">
-                    {step.title}
-                  </h3>
+                <div className="flex items-baseline gap-4">
+                  <span className="font-[family-name:var(--font-display)] text-6xl font-extrabold text-white/[0.04] md:text-7xl">
+                    {step.number}
+                  </span>
                 </div>
-                <p className="mt-4 max-w-md text-stone-500 leading-relaxed">
+                <h3 className="mt-2 font-[family-name:var(--font-display)] text-2xl font-bold text-white">
+                  {step.title}
+                </h3>
+                <p className="mt-4 max-w-md text-stone-400 leading-relaxed">
                   {step.description}
                 </p>
               </div>
 
-              {/* Screenshot */}
-              <div className="flex-1">
-                <div className="mx-auto w-[220px] md:w-[250px]">
-                  <div className="overflow-hidden rounded-[2rem] border-[5px] border-stone-200 bg-white shadow-xl">
+              {/* Phone */}
+              <div className="flex-1 flex justify-center">
+                <div className="relative w-[200px] md:w-[230px]">
+                  {/* Glow */}
+                  <div className="absolute -inset-8 -z-10 rounded-full bg-green-500/[0.04] blur-2xl" />
+                  {/* Phone */}
+                  <div className="overflow-hidden rounded-[2rem] border border-white/[0.08] bg-stone-900 shadow-2xl shadow-black/40">
                     <img
                       src={step.screenshot}
-                      alt={`Étape ${step.number} — ${step.title}`}
+                      alt={step.title}
                       className="w-full"
                       loading="lazy"
                     />

@@ -1,75 +1,84 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircle, Clock, AlertTriangle } from "lucide-react";
-
-const problems = [
-  {
-    icon: MessageCircle,
-    title: "Groupes Facebook",
-    description:
-      "Chercher un pro dans des dizaines de groupes, scroller sans fin, espérer une réponse... Ce n'est pas un système.",
-  },
-  {
-    icon: Clock,
-    title: "Bouche-à-oreille",
-    description:
-      "Demander autour de soi, attendre des recommandations, rappeler trois fois. Ça prend des jours.",
-  },
-  {
-    icon: AlertTriangle,
-    title: "Aucune garantie",
-    description:
-      "Pas de profils vérifiés, pas d'avis, pas de disponibilités en temps réel. C'est le flou total.",
-  },
-];
 
 export default function ProblemSection() {
   return (
-    <section className="bg-stone-50 py-20 md:py-28">
-      <div className="mx-auto max-w-6xl px-5">
+    <section className="relative bg-stone-950 py-24 md:py-32">
+      <div className="mx-auto max-w-3xl px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center"
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
         >
-          <p className="text-sm font-semibold uppercase tracking-widest text-green-600">
-            Le problème
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+            Le constat
           </p>
-          <h2 className="mt-3 font-[family-name:var(--font-display)] text-3xl font-bold md:text-4xl">
-            Fini les groupes Facebook
-            <br className="hidden sm:block" /> et le bouche-à-oreille
+
+          <h2 className="mt-6 font-[family-name:var(--font-display)] text-2xl font-bold leading-snug text-white md:text-4xl md:leading-snug">
+            Trouver un professionnel équestre,
+            <span className="text-stone-500">
+              {" "}
+              c&apos;est encore le Far West.
+            </span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-stone-500">
-            Trouver un groom, un coach ou un transporteur ne devrait pas être un
-            parcours du combattant.
-          </p>
+
+          <div className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-stone-400 md:text-lg">
+            <p>
+              Groupes Facebook saturés, recommandations de bouche-à-oreille
+              hasardeuses, numéros perdus dans un carnet.{" "}
+              <span className="text-stone-300">
+                Il n&apos;existait aucune plateforme dédiée
+              </span>{" "}
+              pour connecter cavaliers et professionnels.
+            </p>
+          </div>
         </motion.div>
 
-        <div className="mt-14 grid gap-8 md:grid-cols-3">
-          {problems.map((item, i) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm"
+        {/* Visual separator — pain points as subtle chips */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="mt-12 flex flex-wrap items-center justify-center gap-3"
+        >
+          {[
+            "Pas de profils vérifiés",
+            "Aucun avis fiable",
+            "Recherche sans fin",
+            "Double-bookings",
+            "Temps perdu",
+            "Zéro visibilité",
+          ].map((pain) => (
+            <span
+              key={pain}
+              className="rounded-full border border-white/[0.06] bg-white/[0.02] px-4 py-1.5 text-xs font-medium text-stone-500"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-stone-100">
-                <item.icon className="h-6 w-6 text-stone-600" />
-              </div>
-              <h3 className="mt-5 font-[family-name:var(--font-display)] text-lg font-semibold">
-                {item.title}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-stone-500">
-                {item.description}
-              </p>
-            </motion.div>
+              {pain}
+            </span>
           ))}
-        </div>
+        </motion.div>
+
+        {/* Transition line */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.4 }}
+          className="mx-auto mt-16 h-px w-16 bg-gradient-to-r from-transparent via-green-500/50 to-transparent"
+        />
+
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="mt-6 text-sm font-medium text-green-400/80"
+        >
+          Groom Up change la donne.
+        </motion.p>
       </div>
     </section>
   );
