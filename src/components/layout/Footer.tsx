@@ -8,9 +8,9 @@ const footerLinks = {
     { label: "Pour les pros", href: "#pros" },
   ],
   Légal: [
-    { label: "Conditions générales", href: "#" },
-    { label: "Politique de confidentialité", href: "#" },
-    { label: "Mentions légales", href: "#" },
+    { label: "Conditions générales", href: "/terms" },
+    { label: "Politique de confidentialité", href: "/privacy" },
+    { label: "Mentions légales", href: "/legal" },
   ],
 };
 
