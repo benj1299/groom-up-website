@@ -140,10 +140,10 @@ export default function TermsPage() {
             <p className="mt-3">
               Tout signalement peut être adressé à{" "}
               <a
-                href="mailto:contact@groom-up-company.com"
+                href="mailto:groomup.company@gmail.com"
                 className="text-stone-100 underline"
               >
-                contact@groom-up-company.com
+                groomup.company@gmail.com
               </a>
               . Nous nous réservons le droit de retirer un contenu et/ou
               suspendre un compte sans préavis.
@@ -241,10 +241,10 @@ export default function TermsPage() {
               <br />
               Email&nbsp;:{" "}
               <a
-                href="mailto:contact@groom-up-company.com"
+                href="mailto:groomup.company@gmail.com"
                 className="text-stone-100 underline"
               >
-                contact@groom-up-company.com
+                groomup.company@gmail.com
               </a>
             </p>
           </section>

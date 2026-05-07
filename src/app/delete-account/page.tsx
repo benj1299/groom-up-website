@@ -66,10 +66,10 @@ export default function DeleteAccountPage() {
               Si vous n&apos;avez plus accès à l&apos;application, envoyez un
               email à{" "}
               <a
-                href="mailto:contact@groom-up-company.com?subject=Demande%20de%20suppression%20de%20compte%20Groom%20Up"
+                href="mailto:groomup.company@gmail.com?subject=Demande%20de%20suppression%20de%20compte%20Groom%20Up"
                 className="text-stone-100 underline"
               >
-                contact@groom-up-company.com
+                groomup.company@gmail.com
               </a>{" "}
               avec&nbsp;:
             </p>
@@ -186,10 +186,10 @@ export default function DeleteAccountPage() {
               <br />
               Email&nbsp;:{" "}
               <a
-                href="mailto:contact@groom-up-company.com"
+                href="mailto:groomup.company@gmail.com"
                 className="text-stone-100 underline"
               >
-                contact@groom-up-company.com
+                groomup.company@gmail.com
               </a>
               <br />
               Politique de confidentialité&nbsp;:{" "}

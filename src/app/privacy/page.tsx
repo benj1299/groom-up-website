@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-const LAST_UPDATED = "27 avril 2026";
+const LAST_UPDATED = "7 mai 2026";
 
 export default function PrivacyPage() {
   return (
@@ -121,6 +121,48 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="font-poppins text-2xl font-semibold text-stone-100">
+              3 bis. Permissions de l&apos;appareil
+            </h2>
+            <p className="mt-3">
+              L&apos;application demande certaines autorisations système pour
+              fonctionner. Aucune n&apos;est utilisée en arrière-plan. Vous pouvez
+              les révoquer à tout moment dans les réglages de votre téléphone.
+            </p>
+            <ul className="mt-3 list-disc pl-6 space-y-2">
+              <li>
+                <strong>Caméra&nbsp;</strong>(<code>android.permission.CAMERA</code>,
+                <code>NSCameraUsageDescription</code>)&nbsp;: prendre une photo
+                de profil ou une photo à envoyer en messagerie. Demandée
+                uniquement au moment où vous tapez sur le bouton appareil photo.
+              </li>
+              <li>
+                <strong>Photothèque&nbsp;</strong>(<code>READ_EXTERNAL_STORAGE</code>,
+                <code>NSPhotoLibraryUsageDescription</code>)&nbsp;: choisir une
+                photo existante pour le profil ou la messagerie.
+              </li>
+              <li>
+                <strong>Microphone&nbsp;</strong>(<code>RECORD_AUDIO</code>,
+                <code>NSMicrophoneUsageDescription</code>)&nbsp;: enregistrer un
+                message audio dans une conversation. Pas d&apos;enregistrement
+                continu.
+              </li>
+              <li>
+                <strong>Localisation&nbsp;</strong>(<code>ACCESS_FINE_LOCATION</code>,
+                <code>ACCESS_COARSE_LOCATION</code>,
+                <code>NSLocationWhenInUseUsageDescription</code>)&nbsp;: afficher
+                les professionnels proches sur la carte. Utilisée uniquement
+                lorsque l&apos;application est ouverte (jamais en arrière-plan).
+              </li>
+              <li>
+                <strong>Notifications push&nbsp;</strong>(<code>POST_NOTIFICATIONS</code>)&nbsp;:
+                vous prévenir d&apos;un nouveau message ou d&apos;un avis reçu.
+                Désactivable à tout moment.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="font-poppins text-2xl font-semibold text-stone-100">
               4. Sous-traitants et tiers
             </h2>
             <p className="mt-3">
@@ -217,10 +259,10 @@ export default function PrivacyPage() {
             <p className="mt-3">
               Pour exercer ces droits, contactez-nous à{" "}
               <a
-                href="mailto:contact@groom-up-company.com"
+                href="mailto:groomup.company@gmail.com"
                 className="text-stone-100 underline"
               >
-                contact@groom-up-company.com
+                groomup.company@gmail.com
               </a>
               .
             </p>
@@ -271,10 +313,10 @@ export default function PrivacyPage() {
               <br />
               Email&nbsp;:{" "}
               <a
-                href="mailto:contact@groom-up-company.com"
+                href="mailto:groomup.company@gmail.com"
                 className="text-stone-100 underline"
               >
-                contact@groom-up-company.com
+                groomup.company@gmail.com
               </a>
               <br />
               Site&nbsp;:{" "}
