@@ -108,37 +108,35 @@ export default function HeroSection() {
           <div className="absolute left-1/2 top-1/2 -z-10 h-[400px] w-[600px] -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(ellipse,rgba(34,197,94,0.12),transparent_70%)] blur-xl" />
 
           <div className="flex items-end justify-center gap-4 md:gap-6">
-            {/* Left phone — secondary */}
-            <div className="hidden w-[180px] -translate-y-6 opacity-60 blur-[0.5px] md:block">
-              <div className="overflow-hidden rounded-[1.8rem] border border-white/[0.08] bg-stone-900 shadow-2xl">
+            {/* Left slide — secondary */}
+            <div className="hidden w-[200px] -translate-y-8 opacity-70 md:block">
+              <div className="overflow-hidden rounded-2xl shadow-2xl shadow-black/40 ring-1 ring-white/[0.08]">
                 <img
-                  src="/screenshots/results.png"
-                  alt="Résultats de recherche"
+                  src="/screenshots/slide-search.png"
+                  alt="Recherche et filtres"
                   className="w-full"
                 />
               </div>
             </div>
 
-            {/* Center phone — hero */}
-            <div className="relative w-[240px] md:w-[270px]">
-              <div className="overflow-hidden rounded-[2.2rem] border border-white/[0.08] bg-stone-900 shadow-2xl shadow-black/50 md:rounded-[2.5rem]">
+            {/* Center slide — hero */}
+            <div className="relative w-[260px] md:w-[300px]">
+              <div className="overflow-hidden rounded-2xl shadow-2xl shadow-black/50 ring-1 ring-white/[0.1]">
                 <img
-                  src="/screenshots/home.png"
-                  alt="Groom Up — Accueil"
+                  src="/screenshots/slide-home.png"
+                  alt="Groom Up — Découverte"
                   className="w-full"
                   loading="eager"
                 />
               </div>
-              {/* Glass reflection */}
-              <div className="pointer-events-none absolute inset-0 rounded-[2.2rem] phone-glass md:rounded-[2.5rem]" />
             </div>
 
-            {/* Right phone — secondary */}
-            <div className="hidden w-[180px] -translate-y-6 opacity-60 blur-[0.5px] md:block">
-              <div className="overflow-hidden rounded-[1.8rem] border border-white/[0.08] bg-stone-900 shadow-2xl">
+            {/* Right slide — secondary */}
+            <div className="hidden w-[200px] -translate-y-8 opacity-70 md:block">
+              <div className="overflow-hidden rounded-2xl shadow-2xl shadow-black/40 ring-1 ring-white/[0.08]">
                 <img
-                  src="/screenshots/messages.png"
-                  alt="Messagerie"
+                  src="/screenshots/slide-messages.png"
+                  alt="Messagerie intégrée"
                   className="w-full"
                 />
               </div>
