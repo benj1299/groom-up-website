@@ -2,12 +2,11 @@
 
 import { motion } from "framer-motion";
 
-const screenshots = [
-  { src: "/screenshots/home.png", label: "Accueil" },
-  { src: "/screenshots/map.png", label: "Carte" },
-  { src: "/screenshots/results.png", label: "Recherche" },
-  { src: "/screenshots/messages.png", label: "Messages" },
-  { src: "/screenshots/profile.png", label: "Profil" },
+const slides = [
+  { src: "/screenshots/slide-home.png", label: "Découverte" },
+  { src: "/screenshots/slide-search.png", label: "Recherche" },
+  { src: "/screenshots/slide-messages.png", label: "Messagerie" },
+  { src: "/screenshots/slide-intro.png", label: "L'app" },
 ];
 
 export default function AppShowcaseSection() {
@@ -31,63 +30,41 @@ export default function AppShowcaseSection() {
             L&apos;application
           </p>
           <h2 className="mt-4 font-[family-name:var(--font-display)] text-3xl font-bold text-white md:text-4xl">
-            Pensée pour le terrain.
+            Un aperçu de l&apos;app.
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-stone-400">
-            Interface épurée, navigation fluide. Utilisable entre deux reprises,
-            au paddock ou dans le van.
+            Recherche géolocalisée, filtres précis et messagerie intégrée —
+            utilisable entre deux reprises, au paddock ou dans le van.
           </p>
         </motion.div>
 
-        {/* Screenshots row */}
-        <div className="mt-16 flex items-end justify-center gap-3 md:gap-5">
-          {screenshots.map((shot, i) => {
-            const isCenter = i === 2;
-            const isAdjacent = i === 1 || i === 3;
-
-            return (
-              <motion.div
-                key={shot.label}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{
-                  duration: 0.6,
-                  delay: Math.abs(i - 2) * 0.1,
-                  ease: [0.16, 1, 0.3, 1],
-                }}
-                className={`flex-shrink-0 transition-all duration-500 ${
-                  isCenter
-                    ? "w-[160px] md:w-[220px] z-10"
-                    : isAdjacent
-                    ? "w-[120px] md:w-[180px] opacity-80"
-                    : "hidden w-[100px] opacity-50 sm:block md:w-[150px]"
-                }`}
-              >
-                <div
-                  className={`overflow-hidden border border-white/[0.08] bg-stone-900 shadow-2xl shadow-black/40 ${
-                    isCenter
-                      ? "rounded-[1.8rem] md:rounded-[2.2rem]"
-                      : "rounded-[1.4rem] md:rounded-[1.8rem]"
-                  }`}
-                >
-                  <img
-                    src={shot.src}
-                    alt={shot.label}
-                    className="w-full"
-                    loading="lazy"
-                  />
-                </div>
-                <p
-                  className={`mt-3 text-center text-[11px] font-medium ${
-                    isCenter ? "text-stone-300" : "text-stone-600"
-                  }`}
-                >
-                  {shot.label}
-                </p>
-              </motion.div>
-            );
-          })}
+        {/* Slides grid */}
+        <div className="mt-16 grid grid-cols-2 gap-5 sm:gap-6 md:grid-cols-4">
+          {slides.map((slide, i) => (
+            <motion.div
+              key={slide.label}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{
+                duration: 0.6,
+                delay: i * 0.08,
+                ease: [0.16, 1, 0.3, 1],
+              }}
+            >
+              <div className="overflow-hidden rounded-2xl shadow-2xl shadow-black/40 ring-1 ring-white/[0.08] transition-transform duration-500 hover:-translate-y-1.5">
+                <img
+                  src={slide.src}
+                  alt={slide.label}
+                  className="w-full"
+                  loading="lazy"
+                />
+              </div>
+              <p className="mt-3 text-center text-[11px] font-medium text-stone-500">
+                {slide.label}
+              </p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
