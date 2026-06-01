@@ -67,7 +67,7 @@ export default function ProblemSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="mx-auto mt-16 h-px w-16 bg-gradient-to-r from-transparent via-green-500/50 to-transparent"
+          className="mx-auto mt-16 h-px w-16 bg-gradient-to-r from-transparent via-brand-500/50 to-transparent"
         />
 
         <motion.p
@@ -75,7 +75,7 @@ export default function ProblemSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-6 text-sm font-medium text-green-400/80"
+          className="mt-6 text-sm font-medium text-brand-400/80"
         >
           Groom Up change la donne.
         </motion.p>

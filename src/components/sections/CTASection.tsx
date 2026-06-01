@@ -10,7 +10,7 @@ export default function CTASection() {
       <div className="absolute left-1/2 top-0 h-px w-3/4 max-w-2xl -translate-x-1/2 bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
 
       {/* Background */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_100%,rgba(34,197,94,0.08),transparent)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_100%,rgba(92,225,230,0.08),transparent)]" />
 
       <div className="relative mx-auto max-w-6xl px-6">
         <motion.div
@@ -23,7 +23,7 @@ export default function CTASection() {
           {/* Card */}
           <div className="relative overflow-hidden rounded-3xl border border-white/[0.06] bg-white/[0.02] p-10 md:p-16">
             {/* Inner glow */}
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(34,197,94,0.05),transparent_70%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(92,225,230,0.05),transparent_70%)]" />
 
             <div className="relative text-center">
               <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold text-white md:text-4xl">

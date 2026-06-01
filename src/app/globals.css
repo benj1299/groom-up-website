@@ -13,8 +13,19 @@
   --color-stone-900: #1c1917;
   --color-stone-950: #0c0a09;
 
-  --color-brand: #22c55e;
-  --color-brand-dark: #16a34a;
+  /* Brand cyan — from GroomUp app logo (lib/theme/colors.ts brand scale) */
+  --color-brand-50: #edfffe;
+  --color-brand-100: #d0fffe;
+  --color-brand-200: #a1feff;
+  --color-brand-300: #72fbfe;
+  --color-brand-400: #5ce1e6;
+  --color-brand-500: #3bc5ce;
+  --color-brand-600: #1f9da8;
+  --color-brand-700: #1a7d88;
+  --color-brand-800: #1c656e;
+  --color-brand-900: #1c535c;
+  --color-brand: #5ce1e6;
+  --color-brand-dark: #3bc5ce;
   --color-gold: #c9a84c;
   --color-gold-light: #e8d48b;
 
@@ -30,7 +41,7 @@
   }
 
   ::selection {
-    background-color: rgba(34, 197, 94, 0.15);
+    background-color: rgba(92, 225, 230, 0.15);
     color: inherit;
   }
 }
@@ -44,9 +55,9 @@
 /* Premium gradient mesh */
 .gradient-mesh {
   background:
-    radial-gradient(at 27% 37%, rgba(34, 197, 94, 0.08) 0px, transparent 50%),
+    radial-gradient(at 27% 37%, rgba(92, 225, 230, 0.08) 0px, transparent 50%),
     radial-gradient(at 97% 21%, rgba(201, 168, 76, 0.06) 0px, transparent 50%),
-    radial-gradient(at 52% 99%, rgba(34, 197, 94, 0.04) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, rgba(92, 225, 230, 0.04) 0px, transparent 50%),
     radial-gradient(at 10% 29%, rgba(201, 168, 76, 0.03) 0px, transparent 50%);
 }
 
@@ -63,8 +74,8 @@
 /* Glow effect */
 .glow-green {
   box-shadow:
-    0 0 20px rgba(34, 197, 94, 0.15),
-    0 0 60px rgba(34, 197, 94, 0.05);
+    0 0 20px rgba(92, 225, 230, 0.15),
+    0 0 60px rgba(92, 225, 230, 0.05);
 }
 
 .glow-gold {
@@ -92,7 +103,7 @@
 
 .animated-border {
   --angle: 0deg;
-  border-image: conic-gradient(from var(--angle), #22c55e, #c9a84c, #22c55e) 1;
+  border-image: conic-gradient(from var(--angle), #5ce1e6, #c9a84c, #5ce1e6) 1;
   animation: rotate-border 4s linear infinite;
 }
 

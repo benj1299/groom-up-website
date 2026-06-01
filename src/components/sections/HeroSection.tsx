@@ -9,7 +9,7 @@ export default function HeroSection() {
       {/* Background layers */}
       <div className="absolute inset-0">
         {/* Radial gradient */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(34,197,94,0.12),transparent)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(92,225,230,0.12),transparent)]" />
         {/* Secondary glow */}
         <div className="absolute right-0 top-1/4 h-[500px] w-[500px] bg-[radial-gradient(circle,rgba(201,168,76,0.06),transparent_70%)]" />
         {/* Grid pattern */}
@@ -31,8 +31,8 @@ export default function HeroSection() {
         >
           <div className="inline-flex items-center gap-2.5 rounded-full border border-white/[0.06] bg-white/[0.03] px-4 py-1.5 backdrop-blur-sm">
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-400 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-brand-500" />
             </span>
             <span className="text-xs font-medium text-stone-400">
               Disponible sur iOS &amp; Android
@@ -49,7 +49,7 @@ export default function HeroSection() {
         >
           <span className="text-white">Trouvez le bon pro</span>
           <br />
-          <span className="bg-gradient-to-r from-green-400 via-green-300 to-emerald-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-brand-500 via-brand-400 to-brand-200 bg-clip-text text-transparent">
             pour votre cheval.
           </span>
         </motion.h1>
@@ -105,7 +105,7 @@ export default function HeroSection() {
           className="relative mt-20 md:mt-28"
         >
           {/* Glow behind phones */}
-          <div className="absolute left-1/2 top-1/2 -z-10 h-[400px] w-[600px] -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(ellipse,rgba(34,197,94,0.12),transparent_70%)] blur-xl" />
+          <div className="absolute left-1/2 top-1/2 -z-10 h-[400px] w-[600px] -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(ellipse,rgba(92,225,230,0.12),transparent_70%)] blur-xl" />
 
           <div className="flex items-end justify-center gap-4 md:gap-6">
             {/* Left slide — secondary */}
