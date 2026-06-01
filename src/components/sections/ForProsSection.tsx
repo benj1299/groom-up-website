@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Eye, Users, Ban, ArrowUpRight } from "lucide-react";
-import { WAITLIST_URL } from "@/lib/utils";
+import { DOWNLOAD_ANCHOR } from "@/lib/utils";
 
 const benefits = [
   {
@@ -111,7 +111,7 @@ export default function ForProsSection() {
               className="mt-10"
             >
               <a
-                href={WAITLIST_URL}
+                href={DOWNLOAD_ANCHOR}
                 className="group inline-flex items-center gap-2 text-sm font-semibold text-gold transition-colors hover:text-gold-light"
               >
                 Inscrire mon activité
