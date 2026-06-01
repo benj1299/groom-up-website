@@ -14,7 +14,7 @@ import {
 
 const categories = [
   { icon: Trophy, name: "Coaching", desc: "Cours, dressage, CSO", color: "text-blue-400" },
-  { icon: Heart, name: "Soins", desc: "Grooming, entretien", color: "text-green-400" },
+  { icon: Heart, name: "Soins", desc: "Grooming, entretien", color: "text-brand-400" },
   { icon: Stethoscope, name: "Santé", desc: "Vétérinaire, ostéo", color: "text-red-400" },
   { icon: Truck, name: "Transport", desc: "Van, longue distance", color: "text-amber-400" },
   { icon: Home, name: "Pension", desc: "Box, pré, écurie", color: "text-purple-400" },
@@ -37,7 +37,7 @@ export default function CategoriesSection() {
           transition={{ duration: 0.7 }}
           className="text-center"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-green-400/70">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-400/70">
             Services
           </p>
           <h2 className="mt-4 font-[family-name:var(--font-display)] text-3xl font-bold text-white md:text-4xl">

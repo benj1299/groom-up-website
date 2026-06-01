@@ -9,8 +9,8 @@ const features = [
     title: "Géolocalisation",
     description:
       "Trouvez les professionnels autour de vous instantanément. Filtrez par spécialité, distance et disponibilité.",
-    gradient: "from-green-500/20 to-emerald-500/0",
-    iconColor: "text-green-400",
+    gradient: "from-brand-500/20 to-brand-400/0",
+    iconColor: "text-brand-400",
   },
   {
     icon: MessageSquare,
@@ -58,7 +58,7 @@ export default function FeaturesSection() {
   return (
     <section id="features" className="relative bg-stone-950 py-24 md:py-32">
       {/* Subtle bg */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_50%_at_50%_50%,rgba(34,197,94,0.03),transparent)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_50%_at_50%_50%,rgba(92,225,230,0.03),transparent)]" />
 
       <div className="relative mx-auto max-w-6xl px-6">
         <motion.div
@@ -68,7 +68,7 @@ export default function FeaturesSection() {
           transition={{ duration: 0.7 }}
           className="text-center"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-green-400/70">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-400/70">
             Fonctionnalités
           </p>
           <h2 className="mt-4 font-[family-name:var(--font-display)] text-3xl font-bold text-white md:text-4xl">

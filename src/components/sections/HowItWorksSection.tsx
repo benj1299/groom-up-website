@@ -40,7 +40,7 @@ export default function HowItWorksSection() {
           transition={{ duration: 0.7 }}
           className="text-center"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-green-400/70">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-400/70">
             Comment ça marche
           </p>
           <h2 className="mt-4 font-[family-name:var(--font-display)] text-3xl font-bold text-white md:text-4xl">
@@ -79,7 +79,7 @@ export default function HowItWorksSection() {
               <div className="flex-1 flex justify-center">
                 <div className="relative w-[200px] md:w-[230px]">
                   {/* Glow */}
-                  <div className="absolute -inset-8 -z-10 rounded-full bg-green-500/[0.04] blur-2xl" />
+                  <div className="absolute -inset-8 -z-10 rounded-full bg-brand-500/[0.04] blur-2xl" />
                   {/* Phone */}
                   <div className="overflow-hidden rounded-[2rem] border border-white/[0.08] bg-stone-900 shadow-2xl shadow-black/40">
                     <img

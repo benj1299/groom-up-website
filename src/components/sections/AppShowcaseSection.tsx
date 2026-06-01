@@ -16,7 +16,7 @@ export default function AppShowcaseSection() {
       <div className="absolute left-1/2 top-0 h-px w-3/4 max-w-2xl -translate-x-1/2 bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
 
       {/* Background glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_60%,rgba(34,197,94,0.06),transparent)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_60%,rgba(92,225,230,0.06),transparent)]" />
 
       <div className="relative mx-auto max-w-6xl px-6">
         <motion.div
@@ -26,7 +26,7 @@ export default function AppShowcaseSection() {
           transition={{ duration: 0.7 }}
           className="text-center"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-green-400/70">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-400/70">
             L&apos;application
           </p>
           <h2 className="mt-4 font-[family-name:var(--font-display)] text-3xl font-bold text-white md:text-4xl">
