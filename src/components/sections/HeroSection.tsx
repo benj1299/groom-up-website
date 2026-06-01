@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { WAITLIST_URL } from "@/lib/utils";
+import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/utils";
 
 export default function HeroSection() {
   return (
@@ -35,7 +35,7 @@ export default function HeroSection() {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
             </span>
             <span className="text-xs font-medium text-stone-400">
-              Lancement printemps 2026
+              Disponible sur iOS &amp; Android
             </span>
           </div>
         </motion.div>
@@ -74,42 +74,26 @@ export default function HeroSection() {
           className="mt-10 flex flex-col items-center gap-3 sm:flex-row"
         >
           <a
-            href={WAITLIST_URL}
-            className="group relative inline-flex items-center gap-2 rounded-full bg-white px-7 py-3 text-sm font-semibold text-stone-950 shadow-xl shadow-white/5 transition-all hover:shadow-white/10 hover:shadow-2xl"
+            href={APP_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2.5 rounded-full bg-white px-6 py-3 text-sm font-semibold text-stone-950 shadow-xl shadow-white/5 transition-all hover:shadow-white/10 hover:shadow-2xl"
           >
-            Rejoindre la liste d&apos;attente
-            <svg
-              className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-              />
+            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
             </svg>
+            App Store
           </a>
           <a
-            href="#features"
-            className="inline-flex items-center gap-2 rounded-full px-7 py-3 text-sm font-medium text-stone-400 transition-colors hover:text-white"
+            href={PLAY_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:border-white/25 hover:bg-white/[0.06]"
           >
-            En savoir plus
-            <svg
-              className="h-3.5 w-3.5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m19.5 8.25-7.5 7.5-7.5-7.5"
-              />
+            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3.609 1.814 13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893 2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198 2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658 16.8 8.99l-2.3 2.3-8.636-8.632z" />
             </svg>
+            Google Play
           </a>
         </motion.div>
 

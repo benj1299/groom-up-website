@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { cn, WAITLIST_URL } from "@/lib/utils";
+import { cn, DOWNLOAD_ANCHOR } from "@/lib/utils";
 
 const navLinks = [
   { label: "Fonctionnalités", href: "#features" },
@@ -55,10 +55,10 @@ export default function Header() {
         {/* CTA */}
         <div className="hidden md:block">
           <a
-            href={WAITLIST_URL}
+            href={DOWNLOAD_ANCHOR}
             className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-white px-5 py-2 text-[13px] font-semibold text-stone-950 transition-all hover:shadow-lg hover:shadow-white/10"
           >
-            <span className="relative z-10">Accès anticipé</span>
+            <span className="relative z-10">Télécharger</span>
             <svg
               className="relative z-10 h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
               fill="none"
@@ -100,11 +100,11 @@ export default function Header() {
               </a>
             ))}
             <a
-              href={WAITLIST_URL}
+              href={DOWNLOAD_ANCHOR}
               onClick={() => setMobileOpen(false)}
               className="mt-4 rounded-full bg-white py-2.5 text-center text-sm font-semibold text-stone-950"
             >
-              Accès anticipé
+              Télécharger
             </a>
           </nav>
         </div>

@@ -1,4 +1,4 @@
-import { WAITLIST_URL } from "@/lib/utils";
+import { DOWNLOAD_ANCHOR } from "@/lib/utils";
 
 const footerLinks = {
   Produit: [
@@ -32,10 +32,10 @@ export default function Footer() {
               équins en France.
             </p>
             <a
-              href={WAITLIST_URL}
+              href={DOWNLOAD_ANCHOR}
               className="mt-6 inline-flex rounded-full border border-white/10 px-5 py-2 text-xs font-medium text-stone-300 transition-all hover:border-white/20 hover:text-white"
             >
-              Rejoindre la liste d&apos;attente
+              Télécharger l&apos;app
             </a>
           </div>
 
