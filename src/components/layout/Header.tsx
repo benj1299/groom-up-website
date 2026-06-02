@@ -33,7 +33,7 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 lg:h-18">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2.5">
-          <img src="/favicon.png" alt="" className="h-7 w-7 rounded-md" />
+          <img src="/logo.png" alt="Groom Up" className="h-8 w-8" />
           <span className="font-[family-name:var(--font-display)] text-base font-bold text-white">
             Groom Up
           </span>
