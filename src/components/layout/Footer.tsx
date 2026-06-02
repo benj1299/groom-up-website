@@ -22,7 +22,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5">
-              <img src="/favicon.png" alt="" className="h-7 w-7 rounded-md" />
+              <img src="/logo.png" alt="Groom Up" className="h-8 w-8" />
               <span className="font-[family-name:var(--font-display)] text-base font-bold text-white">
                 Groom Up
               </span>
@@ -68,7 +68,14 @@ export default function Footer() {
             réservés.
           </p>
           <p className="text-xs text-stone-600">
-            Fait avec soin en France
+            Site réalisé par{" "}
+            <a
+              href="https://masterbrain.fr"
+              title="Master Brain — agence de développement MVP, automatisation et IA"
+              className="font-medium text-stone-400 underline-offset-2 transition-colors hover:text-brand-400 hover:underline"
+            >
+              Master Brain
+            </a>
           </p>
         </div>
       </div>
