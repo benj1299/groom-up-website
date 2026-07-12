@@ -1,0 +1,4 @@
+# Pre-push: full build (catches type + build errors before push).
+# Protège le deploy Vercel prod + évite une CI rouge à corriger après-coup.
+# Bypass d'urgence: git push --no-verify.
+npm run build
