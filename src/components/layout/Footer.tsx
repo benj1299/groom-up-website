@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { DOWNLOAD_ANCHOR } from "@/lib/utils";
 
 const footerLinks = {
@@ -22,7 +23,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5">
-              <img src="/logo.png" alt="Groom Up" className="h-8 w-8" />
+              <Image
+                src="/logo.png"
+                alt="Groom Up"
+                width={32}
+                height={32}
+                className="h-8 w-8"
+              />
               <span className="font-[family-name:var(--font-display)] text-base font-bold text-white">
                 Groom Up
               </span>

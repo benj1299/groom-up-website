@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/utils";
 
 export default function HeroSection() {
@@ -111,10 +112,13 @@ export default function HeroSection() {
             {/* Left slide — secondary */}
             <div className="hidden w-[200px] -translate-y-8 opacity-70 md:block">
               <div className="overflow-hidden rounded-2xl shadow-2xl shadow-black/40 ring-1 ring-white/[0.08]">
-                <img
+                <Image
                   src="/screenshots/slide-search.png"
                   alt="Recherche et filtres"
-                  className="w-full"
+                  width={1290}
+                  height={2796}
+                  className="h-auto w-full"
+                  loading="eager"
                 />
               </div>
             </div>
@@ -122,11 +126,13 @@ export default function HeroSection() {
             {/* Center slide — hero */}
             <div className="relative w-[260px] md:w-[300px]">
               <div className="overflow-hidden rounded-2xl shadow-2xl shadow-black/50 ring-1 ring-white/[0.1]">
-                <img
+                <Image
                   src="/screenshots/slide-home.png"
                   alt="Groom Up — Découverte"
-                  className="w-full"
-                  loading="eager"
+                  width={1290}
+                  height={2796}
+                  className="h-auto w-full"
+                  priority
                 />
               </div>
             </div>
@@ -134,10 +140,13 @@ export default function HeroSection() {
             {/* Right slide — secondary */}
             <div className="hidden w-[200px] -translate-y-8 opacity-70 md:block">
               <div className="overflow-hidden rounded-2xl shadow-2xl shadow-black/40 ring-1 ring-white/[0.08]">
-                <img
+                <Image
                   src="/screenshots/slide-messages.png"
                   alt="Messagerie intégrée"
-                  className="w-full"
+                  width={1290}
+                  height={2796}
+                  className="h-auto w-full"
+                  loading="eager"
                 />
               </div>
             </div>

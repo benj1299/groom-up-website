@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Eye, Users, Ban, ArrowUpRight } from "lucide-react";
 import { DOWNLOAD_ANCHOR } from "@/lib/utils";
 
@@ -46,10 +47,12 @@ export default function ForProsSection() {
               <div className="absolute -inset-10 -z-10 rounded-full bg-gold/[0.06] blur-3xl" />
               {/* Phone */}
               <div className="overflow-hidden rounded-[2.2rem] border border-white/[0.08] bg-stone-900 shadow-2xl shadow-black/40">
-                <img
+                <Image
                   src="/screenshots/profile.png"
                   alt="Profil professionnel"
-                  className="w-full"
+                  width={1170}
+                  height={2685}
+                  className="h-auto w-full"
                   loading="lazy"
                 />
               </div>
