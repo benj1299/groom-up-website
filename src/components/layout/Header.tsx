@@ -40,6 +40,7 @@ export default function Header() {
             width={32}
             height={32}
             className="h-8 w-8"
+            priority
           />
           <span className="font-[family-name:var(--font-display)] text-base font-bold text-white">
             Groom Up
