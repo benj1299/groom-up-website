@@ -1,0 +1,41 @@
+# CI — lint + type-check on every PR. Deployed on Vercel (own build).
+# Single Next app on npm (no turbo). Heavy checks (build) run in the pre-push
+# hook locally, so red-CI iteration is avoided — this job is the cheap gate.
+# See .claude/rules/conventions/ci-cost.md (Business repo) for the standard.
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+    paths-ignore: ["**.md", "docs/**", ".vscode/**", "LICENSE"]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    name: lint + type-check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install (clean)
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type check
+        run: npm run type-check

@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,json,yml,yaml}\" --ignore-path .gitignore --ignore-path .prettierignore",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,json,yml,yaml}\" --ignore-path .gitignore --ignore-path .prettierignore",
+    "prepare": "husky"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.1",
@@ -23,5 +27,11 @@
     "tailwind-merge": "^3.5.0",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-next": "^16.1.6",
+    "husky": "^9.1.7",
+    "prettier": "^3.8.4"
   }
 }
