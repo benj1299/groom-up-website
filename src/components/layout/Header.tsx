@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { cn, DOWNLOAD_ANCHOR } from "@/lib/utils";
 
@@ -33,7 +34,14 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 lg:h-18">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2.5">
-          <img src="/logo.png" alt="Groom Up" className="h-8 w-8" />
+          <Image
+            src="/logo.png"
+            alt="Groom Up"
+            width={32}
+            height={32}
+            className="h-8 w-8"
+            priority
+          />
           <span className="font-[family-name:var(--font-display)] text-base font-bold text-white">
             Groom Up
           </span>

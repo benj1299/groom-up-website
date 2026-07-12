@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const steps = [
   {
@@ -9,6 +10,8 @@ const steps = [
     description:
       "Renseignez votre localisation et le service dont vous avez besoin. L'app identifie les professionnels disponibles autour de vous.",
     screenshot: "/screenshots/search.png",
+    width: 1170,
+    height: 2532,
   },
   {
     number: "02",
@@ -16,6 +19,8 @@ const steps = [
     description:
       "Parcourez les profils détaillés : spécialités, tarifs, avis, temps de réponse. Trouvez celui qui correspond à vos attentes.",
     screenshot: "/screenshots/results.png",
+    width: 1170,
+    height: 3828,
   },
   {
     number: "03",
@@ -23,6 +28,8 @@ const steps = [
     description:
       "Envoyez un message directement. Échangez, planifiez et organisez votre rendez-vous en quelques minutes.",
     screenshot: "/screenshots/messages.png",
+    width: 1170,
+    height: 2532,
   },
 ];
 
@@ -82,10 +89,12 @@ export default function HowItWorksSection() {
                   <div className="absolute -inset-8 -z-10 rounded-full bg-brand-500/[0.04] blur-2xl" />
                   {/* Phone */}
                   <div className="overflow-hidden rounded-[2rem] border border-white/[0.08] bg-stone-900 shadow-2xl shadow-black/40">
-                    <img
+                    <Image
                       src={step.screenshot}
                       alt={step.title}
-                      className="w-full"
+                      width={step.width}
+                      height={step.height}
+                      className="h-auto w-full"
                       loading="lazy"
                     />
                   </div>

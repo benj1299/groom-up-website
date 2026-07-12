@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const slides = [
   { src: "/screenshots/slide-home.png", label: "Découverte" },
@@ -53,10 +54,12 @@ export default function AppShowcaseSection() {
               }}
             >
               <div className="overflow-hidden rounded-2xl shadow-2xl shadow-black/40 ring-1 ring-white/[0.08] transition-transform duration-500 hover:-translate-y-1.5">
-                <img
+                <Image
                   src={slide.src}
                   alt={slide.label}
-                  className="w-full"
+                  width={1290}
+                  height={2796}
+                  className="h-auto w-full"
                   loading="lazy"
                 />
               </div>
