@@ -125,7 +125,8 @@ export default function LegalPage() {
               <br />
               970 Toa Payoh North #07-04, Singapour 318992
               <br />
-              Région de stockage&nbsp;: <em>eu-central-1 (Francfort, Allemagne)</em>
+              Région de stockage&nbsp;:{" "}
+              <em>eu-central-1 (Francfort, Allemagne)</em>
               <br />
               Site web&nbsp;:{" "}
               <a
@@ -206,9 +207,9 @@ export default function LegalPage() {
           <section className="rounded-xl border border-amber-500/20 bg-amber-500/5 p-6">
             <p className="text-sm text-amber-200">
               <strong>Note de l&apos;éditeur&nbsp;:</strong> certaines
-              informations (forme juridique, capital, siège, RCS, SIRET, n°
-              TVA) sont à compléter avant la mise en ligne définitive. Cette
-              page sera mise à jour dès l&apos;immatriculation finalisée.
+              informations (forme juridique, capital, siège, RCS, SIRET, n° TVA)
+              sont à compléter avant la mise en ligne définitive. Cette page
+              sera mise à jour dès l&apos;immatriculation finalisée.
             </p>
           </section>
         </div>

@@ -30,16 +30,17 @@ export default function PrivacyPage() {
               1. Qui sommes-nous&nbsp;?
             </h2>
             <p className="mt-3">
-              Groom Up (&quot;l&apos;application&quot;, &quot;nous&quot;) est un service édité
-              par <strong>Groom Up Company</strong>, dont le siège est en France.
-              Cette politique explique comment nous collectons, utilisons,
-              partageons et protégeons les données personnelles que vous nous
-              confiez en utilisant l&apos;application Groom Up (iOS, Android) ou
-              le site <em>groom-up-company.com</em>.
+              Groom Up (&quot;l&apos;application&quot;, &quot;nous&quot;) est un
+              service édité par <strong>Groom Up Company</strong>, dont le siège
+              est en France. Cette politique explique comment nous collectons,
+              utilisons, partageons et protégeons les données personnelles que
+              vous nous confiez en utilisant l&apos;application Groom Up (iOS,
+              Android) ou le site <em>groom-up-company.com</em>.
             </p>
             <p className="mt-3">
-              Nous agissons en qualité de <strong>responsable de traitement</strong> au
-              sens du Règlement européen 2016/679 (RGPD).
+              Nous agissons en qualité de{" "}
+              <strong>responsable de traitement</strong> au sens du Règlement
+              européen 2016/679 (RGPD).
             </p>
           </section>
 
@@ -55,19 +56,18 @@ export default function PrivacyPage() {
               </li>
               <li>
                 <strong>Profil public&nbsp;</strong>: photo, bannière, bio,
-                spécialités, années d&apos;expérience, langues parlées, site web,
-                Instagram, zones d&apos;intervention déclarées.
+                spécialités, années d&apos;expérience, langues parlées, site
+                web, Instagram, zones d&apos;intervention déclarées.
               </li>
               <li>
                 <strong>Localisation&nbsp;</strong>: adresse renseignée
-                (géocodée pour la recherche), localisation GPS approximative
-                (au km près) si vous activez la permission, jamais en
-                arrière-plan.
+                (géocodée pour la recherche), localisation GPS approximative (au
+                km près) si vous activez la permission, jamais en arrière-plan.
               </li>
               <li>
-                <strong>Contenu utilisateur&nbsp;</strong>: messages,
-                photos, audios, PDFs partagés via la messagerie, avis laissés
-                sur des professionnels.
+                <strong>Contenu utilisateur&nbsp;</strong>: messages, photos,
+                audios, PDFs partagés via la messagerie, avis laissés sur des
+                professionnels.
               </li>
               <li>
                 <strong>Données d&apos;abonnement&nbsp;</strong>: statut premium
@@ -98,8 +98,8 @@ export default function PrivacyPage() {
                 modération) — base légale&nbsp;: <em>intérêt légitime</em>.
               </li>
               <li>
-                <strong>Abonnement premium&nbsp;</strong>(messagerie réservée aux
-                abonnés via RevenueCat) — base légale&nbsp;:
+                <strong>Abonnement premium&nbsp;</strong>(messagerie réservée
+                aux abonnés via RevenueCat) — base légale&nbsp;:
                 <em> exécution du contrat</em>.
               </li>
               <li>
@@ -109,8 +109,8 @@ export default function PrivacyPage() {
               </li>
               <li>
                 <strong>Analytics produit et détection de bugs&nbsp;</strong>
-                (PostHog, Sentry) — base légale&nbsp;: <em>intérêt légitime</em>,
-                données minimisées.
+                (PostHog, Sentry) — base légale&nbsp;: <em>intérêt légitime</em>
+                , données minimisées.
               </li>
               <li>
                 <strong>Communications marketing&nbsp;</strong>: aucun email
@@ -125,18 +125,21 @@ export default function PrivacyPage() {
             </h2>
             <p className="mt-3">
               L&apos;application demande certaines autorisations système pour
-              fonctionner. Aucune n&apos;est utilisée en arrière-plan. Vous pouvez
-              les révoquer à tout moment dans les réglages de votre téléphone.
+              fonctionner. Aucune n&apos;est utilisée en arrière-plan. Vous
+              pouvez les révoquer à tout moment dans les réglages de votre
+              téléphone.
             </p>
             <ul className="mt-3 list-disc pl-6 space-y-2">
               <li>
-                <strong>Caméra&nbsp;</strong>(<code>android.permission.CAMERA</code>,
+                <strong>Caméra&nbsp;</strong>(
+                <code>android.permission.CAMERA</code>,
                 <code>NSCameraUsageDescription</code>)&nbsp;: prendre une photo
                 de profil ou une photo à envoyer en messagerie. Demandée
                 uniquement au moment où vous tapez sur le bouton appareil photo.
               </li>
               <li>
-                <strong>Photothèque&nbsp;</strong>(<code>READ_EXTERNAL_STORAGE</code>,
+                <strong>Photothèque&nbsp;</strong>(
+                <code>READ_EXTERNAL_STORAGE</code>,
                 <code>NSPhotoLibraryUsageDescription</code>)&nbsp;: choisir une
                 photo existante pour le profil ou la messagerie.
               </li>
@@ -147,16 +150,19 @@ export default function PrivacyPage() {
                 continu.
               </li>
               <li>
-                <strong>Localisation&nbsp;</strong>(<code>ACCESS_FINE_LOCATION</code>,
+                <strong>Localisation&nbsp;</strong>(
+                <code>ACCESS_FINE_LOCATION</code>,
                 <code>ACCESS_COARSE_LOCATION</code>,
-                <code>NSLocationWhenInUseUsageDescription</code>)&nbsp;: afficher
-                les professionnels proches sur la carte. Utilisée uniquement
-                lorsque l&apos;application est ouverte (jamais en arrière-plan).
+                <code>NSLocationWhenInUseUsageDescription</code>)&nbsp;:
+                afficher les professionnels proches sur la carte. Utilisée
+                uniquement lorsque l&apos;application est ouverte (jamais en
+                arrière-plan).
               </li>
               <li>
-                <strong>Notifications push&nbsp;</strong>(<code>POST_NOTIFICATIONS</code>)&nbsp;:
-                vous prévenir d&apos;un nouveau message ou d&apos;un avis reçu.
-                Désactivable à tout moment.
+                <strong>Notifications push&nbsp;</strong>(
+                <code>POST_NOTIFICATIONS</code>)&nbsp;: vous prévenir d&apos;un
+                nouveau message ou d&apos;un avis reçu. Désactivable à tout
+                moment.
               </li>
             </ul>
           </section>
@@ -186,8 +192,7 @@ export default function PrivacyPage() {
                 région UE/Allemagne).
               </li>
               <li>
-                <strong>PostHog</strong> (analytics produit
-                pseudonymisée).
+                <strong>PostHog</strong> (analytics produit pseudonymisée).
               </li>
               <li>
                 <strong>Vercel / Cloudflare</strong> (hébergement du site web).
@@ -244,8 +249,8 @@ export default function PrivacyPage() {
               <li>Droit d&apos;opposition au traitement,</li>
               <li>Droit de retirer votre consentement à tout moment,</li>
               <li>
-                Droit d&apos;introduire une réclamation auprès de la CNIL
-                (<a
+                Droit d&apos;introduire une réclamation auprès de la CNIL (
+                <a
                   href="https://www.cnil.fr"
                   className="text-stone-100 underline"
                   target="_blank"

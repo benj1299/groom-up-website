@@ -63,8 +63,8 @@ export default function HeroSection() {
           className="mt-6 max-w-xl text-center text-base leading-relaxed text-stone-400 md:text-lg"
         >
           Groom Up connecte cavaliers et professionnels équestres.
-          Géolocalisation, messagerie, profils vérifiés&nbsp;&mdash;&nbsp;le tout
-          dans une seule app.
+          Géolocalisation, messagerie, profils vérifiés&nbsp;&mdash;&nbsp;le
+          tout dans une seule app.
         </motion.p>
 
         {/* CTA */}

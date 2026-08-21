@@ -92,7 +92,10 @@ export default function ForProsSection() {
                   className="flex gap-4"
                 >
                   <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg border border-white/[0.06] bg-white/[0.03]">
-                    <item.icon className="h-4 w-4 text-gold" strokeWidth={1.5} />
+                    <item.icon
+                      className="h-4 w-4 text-gold"
+                      strokeWidth={1.5}
+                    />
                   </div>
                   <div>
                     <h3 className="text-sm font-semibold text-white">
