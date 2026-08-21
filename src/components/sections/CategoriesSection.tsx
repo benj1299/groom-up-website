@@ -13,14 +13,54 @@ import {
 } from "lucide-react";
 
 const categories = [
-  { icon: Trophy, name: "Coaching", desc: "Cours, dressage, CSO", color: "text-blue-400" },
-  { icon: Heart, name: "Soins", desc: "Grooming, entretien", color: "text-brand-400" },
-  { icon: Stethoscope, name: "Santé", desc: "Vétérinaire, ostéo", color: "text-red-400" },
-  { icon: Truck, name: "Transport", desc: "Van, longue distance", color: "text-amber-400" },
-  { icon: Home, name: "Pension", desc: "Box, pré, écurie", color: "text-purple-400" },
-  { icon: Wrench, name: "Équipement", desc: "Sellerie, maréchalerie", color: "text-orange-400" },
-  { icon: Camera, name: "Événementiel", desc: "Photo, vidéo, concours", color: "text-pink-400" },
-  { icon: Leaf, name: "Autres", desc: "Nutrition, comportement", color: "text-teal-400" },
+  {
+    icon: Trophy,
+    name: "Coaching",
+    desc: "Cours, dressage, CSO",
+    color: "text-blue-400",
+  },
+  {
+    icon: Heart,
+    name: "Soins",
+    desc: "Grooming, entretien",
+    color: "text-brand-400",
+  },
+  {
+    icon: Stethoscope,
+    name: "Santé",
+    desc: "Vétérinaire, ostéo",
+    color: "text-red-400",
+  },
+  {
+    icon: Truck,
+    name: "Transport",
+    desc: "Van, longue distance",
+    color: "text-amber-400",
+  },
+  {
+    icon: Home,
+    name: "Pension",
+    desc: "Box, pré, écurie",
+    color: "text-purple-400",
+  },
+  {
+    icon: Wrench,
+    name: "Équipement",
+    desc: "Sellerie, maréchalerie",
+    color: "text-orange-400",
+  },
+  {
+    icon: Camera,
+    name: "Événementiel",
+    desc: "Photo, vidéo, concours",
+    color: "text-pink-400",
+  },
+  {
+    icon: Leaf,
+    name: "Autres",
+    desc: "Nutrition, comportement",
+    color: "text-teal-400",
+  },
 ];
 
 export default function CategoriesSection() {

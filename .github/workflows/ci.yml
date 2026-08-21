@@ -34,8 +34,20 @@ jobs:
       - name: Install (clean)
         run: npm ci
 
+      # La définition a quitté ce fichier pour le `Makefile` : un agent qui arrive sur ce
+      # dépôt lance `make check` sans lire un workflow. Les pas restent SÉPARÉS — un
+      # `make check` monolithique dirait « rouge » sans dire lequel des trois.
+      #
+      # ⚠️ `make lint` porte MAINTENANT `format:check` en plus d'eslint. Prettier était
+      # déclaré dans `package.json` et ne tournait dans AUCUNE porte — ni ici, ni au
+      # `pre-push` (qui ne fait qu'un `npm run build`). Une capacité sans appelant n'est
+      # pas testée.
+      #
+      # ⚠️ Le `name:` du job ci-dessus n'est PAS renommé : il EST le contexte du check
+      # requis côté ruleset. Le script `type-check` de `package.json`, lui, est devenu
+      # `typecheck`.
       - name: Lint
-        run: npm run lint
+        run: make lint
 
       - name: Type check
-        run: npm run type-check
+        run: make typecheck

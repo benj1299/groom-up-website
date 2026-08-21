@@ -27,22 +27,19 @@ export default function DeleteAccountPage() {
         <div className="prose prose-invert mt-10 max-w-none space-y-8 text-stone-300 leading-relaxed">
           <section>
             <h2 className="font-poppins text-2xl font-semibold text-stone-100">
-              Méthode 1&nbsp;: directement dans l&apos;application
-              (recommandée)
+              Méthode 1&nbsp;: directement dans l&apos;application (recommandée)
             </h2>
             <ol className="mt-3 list-decimal pl-6 space-y-2">
               <li>Ouvrez l&apos;application Groom Up sur votre téléphone.</li>
               <li>
-                Connectez-vous avec votre compte si ce n&apos;est pas déjà
-                fait.
+                Connectez-vous avec votre compte si ce n&apos;est pas déjà fait.
               </li>
               <li>
                 Allez dans l&apos;onglet <strong>Profil</strong> en bas à
                 droite.
               </li>
               <li>
-                Touchez l&apos;icône <strong>Réglages</strong> en haut à
-                droite.
+                Touchez l&apos;icône <strong>Réglages</strong> en haut à droite.
               </li>
               <li>
                 Faites défiler jusqu&apos;à la section{" "}
@@ -74,9 +71,7 @@ export default function DeleteAccountPage() {
               avec&nbsp;:
             </p>
             <ul className="mt-3 list-disc pl-6 space-y-2">
-              <li>
-                L&apos;adresse email associée à votre compte Groom Up
-              </li>
+              <li>L&apos;adresse email associée à votre compte Groom Up</li>
               <li>
                 L&apos;objet&nbsp;: <em>Demande de suppression de compte</em>
               </li>
@@ -85,9 +80,9 @@ export default function DeleteAccountPage() {
               </li>
             </ul>
             <p className="mt-3">
-              Nous traitons les demandes sous <strong>72&nbsp;heures
-              ouvrées</strong>. Vous recevrez une confirmation par email
-              après suppression.
+              Nous traitons les demandes sous{" "}
+              <strong>72&nbsp;heures ouvrées</strong>. Vous recevrez une
+              confirmation par email après suppression.
             </p>
           </section>
 
@@ -102,18 +97,17 @@ export default function DeleteAccountPage() {
             <ul className="mt-3 list-disc pl-6 space-y-2">
               <li>
                 <strong>Profil&nbsp;</strong>: nom, photo, bannière, bio,
-                spécialités, tarif, zones d&apos;intervention, langues, liens
-                — supprimés sous 30&nbsp;jours.
+                spécialités, tarif, zones d&apos;intervention, langues, liens —
+                supprimés sous 30&nbsp;jours.
               </li>
               <li>
                 <strong>Localisation&nbsp;</strong>: adresse et coordonnées —
                 supprimées sous 30&nbsp;jours.
               </li>
               <li>
-                <strong>Messages et photos partagés&nbsp;</strong>:
-                anonymisés immédiatement (le contenu reste visible aux autres
-                participants des conversations comme &quot;Utilisateur
-                supprimé&quot;).
+                <strong>Messages et photos partagés&nbsp;</strong>: anonymisés
+                immédiatement (le contenu reste visible aux autres participants
+                des conversations comme &quot;Utilisateur supprimé&quot;).
               </li>
               <li>
                 <strong>Avis laissés&nbsp;</strong>: anonymisés immédiatement.
@@ -123,8 +117,8 @@ export default function DeleteAccountPage() {
                 immédiatement.
               </li>
               <li>
-                <strong>Compte d&apos;authentification&nbsp;</strong>:
-                supprimé immédiatement (impossible de se reconnecter).
+                <strong>Compte d&apos;authentification&nbsp;</strong>: supprimé
+                immédiatement (impossible de se reconnecter).
               </li>
             </ul>
           </section>
@@ -161,18 +155,18 @@ export default function DeleteAccountPage() {
               Suppression de l&apos;abonnement premium
             </h2>
             <p className="mt-3">
-              La suppression de votre compte Groom Up <strong>n&apos;annule
-              pas automatiquement</strong> votre abonnement premium. Pour
-              annuler l&apos;abonnement&nbsp;:
+              La suppression de votre compte Groom Up{" "}
+              <strong>n&apos;annule pas automatiquement</strong> votre
+              abonnement premium. Pour annuler l&apos;abonnement&nbsp;:
             </p>
             <ul className="mt-3 list-disc pl-6 space-y-2">
               <li>
-                <strong>iOS&nbsp;</strong>: Réglages → votre nom →
-                Abonnements → Groom Up → Annuler l&apos;abonnement
+                <strong>iOS&nbsp;</strong>: Réglages → votre nom → Abonnements →
+                Groom Up → Annuler l&apos;abonnement
               </li>
               <li>
-                <strong>Android&nbsp;</strong>: Google Play Store →
-                Paiements et abonnements → Abonnements → Groom Up → Annuler
+                <strong>Android&nbsp;</strong>: Google Play Store → Paiements et
+                abonnements → Abonnements → Groom Up → Annuler
               </li>
             </ul>
           </section>

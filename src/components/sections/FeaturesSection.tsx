@@ -1,7 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, MessageSquare, ShieldCheck, Star, Zap, Bell } from "lucide-react";
+import {
+  MapPin,
+  MessageSquare,
+  ShieldCheck,
+  Star,
+  Zap,
+  Bell,
+} from "lucide-react";
 
 const features = [
   {

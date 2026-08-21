@@ -30,18 +30,18 @@ export default function TermsPage() {
               1. Objet
             </h2>
             <p className="mt-3">
-              Les présentes Conditions Générales d&apos;Utilisation (&quot;CGU&quot;)
-              régissent l&apos;accès et l&apos;utilisation de l&apos;application
-              mobile Groom Up et du site
+              Les présentes Conditions Générales d&apos;Utilisation
+              (&quot;CGU&quot;) régissent l&apos;accès et l&apos;utilisation de
+              l&apos;application mobile Groom Up et du site
               <em> groom-up-company.com</em> (ensemble, &quot;le Service&quot;),
               édité par <strong>Groom Up Company</strong>.
             </p>
             <p className="mt-3">
-              Le Service met en relation des cavaliers (&quot;Owners&quot;) et des
-              professionnels équins (&quot;Providers&quot;) pour permettre l&apos;échange
-              d&apos;informations et la prise de contact. Groom Up
-              n&apos;intervient ni dans la prestation, ni dans la facturation des
-              services entre utilisateurs.
+              Le Service met en relation des cavaliers (&quot;Owners&quot;) et
+              des professionnels équins (&quot;Providers&quot;) pour permettre
+              l&apos;échange d&apos;informations et la prise de contact. Groom
+              Up n&apos;intervient ni dans la prestation, ni dans la facturation
+              des services entre utilisateurs.
             </p>
           </section>
 
@@ -50,8 +50,8 @@ export default function TermsPage() {
               2. Acceptation
             </h2>
             <p className="mt-3">
-              En créant un compte ou en utilisant le Service, vous acceptez
-              sans réserve les présentes CGU et notre{" "}
+              En créant un compte ou en utilisant le Service, vous acceptez sans
+              réserve les présentes CGU et notre{" "}
               <a href="/privacy" className="text-stone-100 underline">
                 Politique de confidentialité
               </a>
@@ -80,9 +80,8 @@ export default function TermsPage() {
                 puis recréation du compte.
               </li>
               <li>
-                Nous nous réservons le droit de suspendre ou supprimer un
-                compte qui contreviendrait aux CGU, à la loi, ou aux droits de
-                tiers.
+                Nous nous réservons le droit de suspendre ou supprimer un compte
+                qui contreviendrait aux CGU, à la loi, ou aux droits de tiers.
               </li>
             </ul>
           </section>
@@ -93,8 +92,8 @@ export default function TermsPage() {
             </h2>
             <p className="mt-3">
               L&apos;accès à la messagerie entre utilisateurs nécessite un
-              abonnement premium. Le paiement et la facturation sont opérés
-              par <strong>Apple App Store</strong> (iOS) ou
+              abonnement premium. Le paiement et la facturation sont opérés par{" "}
+              <strong>Apple App Store</strong> (iOS) ou
               <strong> Google Play Billing</strong> (Android), via notre
               prestataire RevenueCat. Aucun moyen de paiement n&apos;est stocké
               par Groom Up.
@@ -120,8 +119,8 @@ export default function TermsPage() {
             <p className="mt-3">Vous vous engagez à ne pas&nbsp;:</p>
             <ul className="mt-3 list-disc pl-6 space-y-2">
               <li>
-                Publier de contenu illicite, diffamatoire, haineux, harcelant
-                ou portant atteinte à la vie privée de tiers,
+                Publier de contenu illicite, diffamatoire, haineux, harcelant ou
+                portant atteinte à la vie privée de tiers,
               </li>
               <li>
                 Usurper l&apos;identité d&apos;un tiers ou créer plusieurs
@@ -135,7 +134,9 @@ export default function TermsPage() {
                 Solliciter des transactions hors plateforme avant l&apos;échange
                 via la messagerie premium,
               </li>
-              <li>Utiliser le Service à des fins automatisées (scraping, bots).</li>
+              <li>
+                Utiliser le Service à des fins automatisées (scraping, bots).
+              </li>
             </ul>
             <p className="mt-3">
               Tout signalement peut être adressé à{" "}
@@ -162,9 +163,9 @@ export default function TermsPage() {
             </p>
             <p className="mt-3">
               Les avis sont soumis à des règles anti-abus&nbsp;: seul un
-              cavalier ayant échangé via la messagerie peut laisser un avis,
-              un avis par professionnel et par cavalier, modération a
-              posteriori possible.
+              cavalier ayant échangé via la messagerie peut laisser un avis, un
+              avis par professionnel et par cavalier, modération a posteriori
+              possible.
             </p>
           </section>
 
@@ -174,9 +175,8 @@ export default function TermsPage() {
             </h2>
             <ul className="mt-3 list-disc pl-6 space-y-2">
               <li>
-                Groom Up est une plateforme de mise en relation. Nous ne
-                sommes ni partie ni garant des prestations conclues entre
-                utilisateurs.
+                Groom Up est une plateforme de mise en relation. Nous ne sommes
+                ni partie ni garant des prestations conclues entre utilisateurs.
               </li>
               <li>
                 Les informations affichées sur les profils (certifications,

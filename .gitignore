@@ -35,3 +35,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Rapports machine des cibles canoniques. Chemin RÉSERVÉ : rien ne les écrit
+# aujourd'hui, parce que rien ne les lit encore.
+.quality/

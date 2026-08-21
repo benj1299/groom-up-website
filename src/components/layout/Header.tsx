@@ -28,7 +28,7 @@ export default function Header() {
         "fixed top-0 z-50 w-full transition-all duration-500",
         scrolled
           ? "border-b border-white/5 bg-stone-950/80 backdrop-blur-xl"
-          : "bg-transparent"
+          : "bg-transparent",
       )}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 lg:h-18">
